@@ -1,0 +1,6 @@
+public/
+temp/
+templates_c/
+*~
+*.temp
+
