@@ -1,0 +1,6 @@
+- Fill README file.
+- Update bootstrap lib.
+- Imprive page "about_base64".
+- Fill page "site info".
+- Add more examples in page "usages_by_programmers".
+- Test for bugs.
