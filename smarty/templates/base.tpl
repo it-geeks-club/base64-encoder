@@ -1,14 +1,14 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>{block name='title'}{/block} - BASE-64</title>
+    <title>{block name='title'}{/block} - BASE64 ENCODER</title>
 
     <!-- BEGIN METATAG -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="">
-    <meta name="author" content="">
-    <meta name="keywords" content="">
+    <meta name="author" content="Maxim Grischuk, Vova Sirenko">
+    <meta name="keywords" content="base64, encode, decode, convert, online, tool">
     <!-- END METATAG -->
 
     <!-- BEGIN CSS AND OTHER LINKS-->
@@ -52,7 +52,7 @@
           <li class="sidebar-brand">
             <a href="#">
               <img src="/img/favicon.png" />
-              BASE-64.TK
+              ENCODER.TK
             </a>
           </li>
           <li><a href="/index.php?page=about_base64">About BASE64</a></li>
