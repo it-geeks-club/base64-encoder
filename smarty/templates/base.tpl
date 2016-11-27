@@ -23,7 +23,7 @@
 
     <!-- BEGIN JAVASCRIPT -->
     <!-- Include jquery -->
-    <script src="/js/jquery-2.1.0.min.js"></script>
+    <script src="/js/jquery.min.js"></script>
     <!-- Bootstrap common -->
     <script src="/js/bootstrap.js"></script>
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
