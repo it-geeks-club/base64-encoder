@@ -1,30 +1,34 @@
-function clear() {
-    $('div#output img').attr('src', '');
-    $('div#output a').attr('href', '');
-    $('div#output').addClass('hidden');
-}
-
 $(function() {
+    'use strict';
+
+    var clear = function() {
+        $('#output img').attr('src', '');
+        $('#output a').attr('href', '');
+        $('#output').addClass('hidden');
+    };
+
     $('button[data-role="sender"]').on('click', function() {
-        if($('textarea#inputText').val()) {
+        if ($('#inputText').val()) {
             $.ajax({
                 type: 'POST',
                 url: '/scripts/decode_image.php',
-                data: { 'inputText' : $('textarea#inputText').val() },
+                data: {
+                    inputText: $('#inputText').val()
+                },
                 dataType: 'json',
                 beforeSend: function() {
                     clear();
                 },
-                success: function (data) {
-                    if(Object.getOwnPropertyNames(data).length === 0) {
-                        show_error("Can't decode image");
+                success: function(data) {
+                    if (Object.getOwnPropertyNames(data).length === 0) {
+                        showError("Can't decode image");
                     }
-                    $('div#output img').attr('src', data['decodedImage']);
-                    $('div#output a').attr('href', data['decodedImage']);
-                    $('div#output').removeClass('hidden');
+                    $('#output img').attr('src', data.decodedImage);
+                    $('#output a').attr('href', data.decodedImage);
+                    $('#output').removeClass('hidden');
                 },
                 error: function(e) {
-                    show_error("Can't decode image");
+                    showError("Can't decode image");
                 }
             });
         }

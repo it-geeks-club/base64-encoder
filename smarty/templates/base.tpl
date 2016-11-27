@@ -75,19 +75,18 @@
     </div>
     <div id="preloader"></div>
     <!-- Modal -->
-    <div class="modal fade" id="errorModal" tabindex="-1" role="dialog" aria-labelledby="errorModalLabel" aria-hidden="true">
+    <div class="modal fade" id="error-modal" tabindex="-1" role="dialog" aria-labelledby="error-modal-label" aria-hidden="true">
       <div class="modal-dialog">
         <div class="modal-content">
           <div class="modal-header">
             <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-            <h4 class="modal-title text-danger" id="errorModalLabel">
+            <h4 class="modal-title text-danger" id="error-modal-label">
               <span class="glyphicon glyphicon-warning-sign"></span>
               Error!
             </h4>
           </div>
           <div class="modal-body">
-            <h3 class="error_text">
-            </h3>
+            <h3 class="error-text"></h3>
           </div>
         </div><!-- /.modal-content -->
       </div><!-- /.modal-dialog -->

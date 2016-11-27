@@ -1,6 +1,8 @@
 $(function() {
-    $("#menu-toggle").click(function(e) {
+    'use strict';
+
+    $('#menu-toggle').click(function(e) {
         e.preventDefault();
-        $("#wrapper").toggleClass("active");
+        $('#wrapper').toggleClass('active');
     });
 });

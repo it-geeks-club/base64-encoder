@@ -1,6 +1,8 @@
-function show_error(error_text) {
-    $('div#errorModal .modal-body .error_text').text(error_text);
-    $('div#errorModal').modal({
+function showError(errorText) {
+    'use strict';
+
+    $('#error-modal .modal-body .error-text').text(errorText);
+    $('#error-modal').modal({
         show: true
     });
 }

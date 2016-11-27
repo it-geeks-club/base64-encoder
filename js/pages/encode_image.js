@@ -1,72 +1,71 @@
-function clearFileLoader() {
-    $('input#imageFile').replaceWith($('input#imageFile').val('').clone(true));
-}
-
-function clear() {
-    $('textarea#rawBase64').val('');
-    $('textarea#dataURLBase64').val('');
-    $('textarea#htmlBase64').val('');
-    $('textarea#cssBase64').val('');
-    $('textarea#xmlBase64').val('');
-    $('img#convertedImg').attr('src', '/img/no_image_300x300.png');
-    clearFileLoader();
-    $('div#output').addClass('hidden');
-}
-
 $(function() {
-    var options = { 
-        beforeSend: function() 
-        {
+    'use strict';
+
+    var clearFileLoader = function() {
+        $('#imageFile').replaceWith($('#imageFile').val('').clone(true));
+    };
+
+    var clear = function() {
+        $('#rawBase64').val('');
+        $('#dataURLBase64').val('');
+        $('#htmlBase64').val('');
+        $('#cssBase64').val('');
+        $('#xmlBase64').val('');
+        $('#convertedImg').attr('src', '/img/no_image_300x300.png');
+        clearFileLoader();
+        $('#output').addClass('hidden');
+    };
+
+    var options = {
+        beforeSend: function() {
             clear();
         },
-        success: function(data) 
-        {
-            if(data && (data != '\{\}') && (data != '[]')) {
+        success: function(data) {
+            if (data && (data != '\{\}') && (data != '[]')) {
                 data = jQuery.parseJSON(data);
-                $('img#convertedImg').attr('src', data['encodedImageToDataURL']);
-                $('textarea#rawBase64').val(data['encodedImage']);
-                $('textarea#dataURLBase64').val(data['encodedImageToDataURL']);
-                $('textarea#htmlBase64').val('<img src="' + data['encodedImageToDataURL'] + '" />');
-                $('textarea#cssBase64').val("div.image {\n" +
+                $('#convertedImg').attr('src', data.encodedImageToDataURL);
+                $('#rawBase64').val(data.encodedImage);
+                $('#dataURLBase64').val(data.encodedImageToDataURL);
+                $('#htmlBase64').val('<img src="' + data.encodedImageToDataURL + '" />');
+                $('#cssBase64').val(".image {\n" +
                     "    width: 100px;\n" +
                     "    height: 100px;\n" +
-                    "    background-image: url('" + data['encodedImageToDataURL'] + "')\n" +
+                    "    background-image: url('" + data.encodedImageToDataURL + "')\n" +
                     "}");
-                $('textarea#xmlBase64').val('<image>\n' +
+                $('#xmlBase64').val('<image>\n' +
                     '    <title>An image</title>\n' +
-                    '    <link>http://your-domain.com</link>\n' +
-                    '    <url>' + data['encodedImageToDataURL'] + '</url>\n'+
+                    '    <link>http://example.com</link>\n' +
+                    '    <url>' + data.encodedImageToDataURL + '</url>\n' +
                     '</image>');
-                $('div#output').removeClass('hidden');
+                $('#output').removeClass('hidden');
             } else {
-                show_error("Can't encode image");
+                showError("Can't encode image");
             }
         },
-        error: function()
-        {
-            show_error("Can't encode image");
+        error: function() {
+            showError("Can't encode image");
         }
     };
 
-    $('form#imageUpload').ajaxForm(options);
+    $('#imageUpload').ajaxForm(options);
 
-    $('input#imageFile').on('change', function() {
-       $('input#imageUrl').val('');
+    $('#imageFile').on('change', function() {
+        $('#imageUrl').val('');
     });
 
-    $('input#imageUrl').on('change', function() {
-       clearFileLoader();
+    $('#imageUrl').on('change', function() {
+        clearFileLoader();
     });
 
-    $('input#imageUrl').on('paste', function() {
-       clearFileLoader();
+    $('#imageUrl').on('paste', function() {
+        clearFileLoader();
     });
 
-    $('img#convertedImg').on('click', function() {
-       $('input#imageFile').trigger( "click" );
+    $('#convertedImg').on('click', function() {
+        $('input#imageFile').trigger("click");
     });
 
     $('button[type="reset"]').on('click', function() {
-       clear();
+        clear();
     });
 });

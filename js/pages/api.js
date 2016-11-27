@@ -1,3 +1,5 @@
-$(function () {
-    $('#api_tabs li.active a').tab('show')
-})
+$(function() {
+    'use strict';
+
+    $('#api_tabs li.active a').tab('show');
+});
