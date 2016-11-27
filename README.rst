@@ -1,3 +1,6 @@
+.. image:: https://badge.waffle.io/it-geeks-club/base64-encoder.png?label=ready&title=Ready 
+ :target: https://waffle.io/it-geeks-club/base64-encoder
+ :alt: 'Stories in Ready'
 =======
 Summary
 =======
