@@ -7,14 +7,14 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="">
-    <meta name="author" content="Maxim Grischuk, Vova Sirenko">
+    <meta name="author" content="ITGeeks">
     <meta name="keywords" content="base64, encode, decode, convert, online, tool">
     <!-- END METATAG -->
 
     <!-- BEGIN CSS AND OTHER LINKS-->
     <!-- Bootstrap common -->
-    <link href="/img/favicon.png" rel="icon" type="image/png"  media="all"/>
-    <link href="/img/favicon.png" rel="apple-touch-icon" />
+    <link href="/img/favicon.png" rel="icon" type="image/png"  media="all">
+    <link href="/img/favicon.png" rel="apple-touch-icon">
     <link href="/css/bootstrap.css" rel="stylesheet">
     <link href="/css/bootstrap-theme.css" rel="stylesheet">
     <!-- Sidebar -->
@@ -51,8 +51,8 @@
         <ul class="sidebar-nav">
           <li class="sidebar-brand">
             <a href="#">
-              <img src="/img/favicon.png" />
-              ENCODER.TK
+              <img src="/img/favicon.png">
+              ENCODER.CLICK
             </a>
           </li>
           <li><a href="/index.php?page=about_base64">About BASE64</a></li>
