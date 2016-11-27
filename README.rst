@@ -2,7 +2,7 @@
 Summary
 =======
 
-`encoder.tk <http://encoder.tk/>`_ is a website fully about base64 encoding scheme.
+`encoder.click <http://encoder.click/>`_ is BASE64 encoding/decoding in one click!.
 This website could help you understand what is a "base64 encoding scheme",
 what is a reason of usage base64 and how you can use it in your own project.
 
