@@ -27,7 +27,7 @@
         </p>
         <img src="/img/brain_eater.png" width="300" height="350" />
         <p class="text-muted">
-          You can visit <a href="/index.php">main page</a> or <a href="mailto:base64@workmail.com">send message</a> to site support.
+          You can visit <a href="/index.php">main page</a> or <a href="mailto:itgeeks.club@yahoo.com">send message</a> to site support.
         </p>
       </div>
     </div>
