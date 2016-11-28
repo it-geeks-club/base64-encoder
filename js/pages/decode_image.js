@@ -11,7 +11,7 @@ $(function() {
         if ($('#inputText').val()) {
             $.ajax({
                 type: 'POST',
-                url: '/scripts/decode_image.php',
+                url: '/scripts/image/decode',
                 data: {
                     inputText: $('#inputText').val()
                 },

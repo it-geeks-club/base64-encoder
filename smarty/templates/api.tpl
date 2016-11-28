@@ -36,7 +36,7 @@
                     <dl>
                         <dt>URL</dt>
                         <dd>
-                            <code>http://encoder.click/scripts/encode_text.php</code>
+                            <code>http://encoder.click/scripts/text/encode</code>
                         </dd>
                     </dl>
                     <dl>
@@ -56,7 +56,7 @@
                     <dl>
                         <dt>Usage example</dt>
                         <dd>
-                            Request with cURL: <code>curl --data-urlencode "inputText=sample text" http://encoder.click/scripts/encode_text.php</code>
+                            Request with cURL: <code>curl --data-urlencode "inputText=sample text" http://encoder.click/scripts/text/encode</code>
                             <br>Response: <code>{literal}{"encodedText":"c2FtcGxlIHRleHQ="}{/literal}</code>
                         </dd>
                     </dl>
@@ -69,7 +69,7 @@
                     <dl>
                         <dt>URL</dt>
                         <dd>
-                            <code>http://encoder.click/scripts/decode_text.php</code>
+                            <code>http://encoder.click/scripts/text/decode</code>
                         </dd>
                     </dl>
                     <dl>
@@ -89,7 +89,7 @@
                     <dl>
                         <dt>Usage example</dt>
                         <dd>
-                            Request with cURL: <code>curl --data-urlencode "inputText=c2FtcGxlIHRleHQ=" http://encoder.click/scripts/decode_text.php</code>
+                            Request with cURL: <code>curl --data-urlencode "inputText=c2FtcGxlIHRleHQ=" http://encoder.click/scripts/text/decode</code>
                             <br>Response: <code>{literal}{"decodedText":"sample text"}{/literal}</code>
                         </dd>
                     </dl>
@@ -102,7 +102,7 @@
                     <dl>
                         <dt>URL</dt>
                         <dd>
-                            <code>http://encoder.click/scripts/encode_image.php</code>
+                            <code>http://encoder.click/scripts/image/encode</code>
                         </dd>
                     </dl>
                     <dl>
@@ -127,14 +127,14 @@
                     <dl>
                         <dt>Usage example #1</dt>
                         <dd>
-                            Request with cURL: <code>curl -F "imageFile=@/tmp/localfile.png" http://encoder.click/scripts/encode_image.php</code>
+                            Request with cURL: <code>curl -F "imageFile=@/tmp/localfile.png" http://encoder.click/scripts/image/encode</code>
                             <br>Response: <code>{literal}{"encodedImage":"iVB...dgg==","encodedImageToDataURL":"data:image/png;base64,iVB...dgg=="}{/literal}</code>
                         </dd>
                     </dl>
                     <dl>
                         <dt>Usage example #2</dt>
                         <dd>
-                            Request with cURL: <code>curl --data-urlencode "imageUrl=http://imageshack.com/a/img600/6353/foti.png" http://encoder.click/scripts/encode_image.php</code>
+                            Request with cURL: <code>curl --data-urlencode "imageUrl=http://imageshack.com/a/img600/6353/foti.png" http://encoder.click/scripts/image/encode</code>
                             <br>Response: <code>{literal}{"encodedImage":"iVB...gg==","encodedImageToDataURL":"data:image/png;base64,iVB...gg=="}{/literal}</code>
                         </dd>
                     </dl>
@@ -147,7 +147,7 @@
                     <dl>
                         <dt>URL</dt>
                         <dd>
-                            <code>http://encoder.click/scripts/decode_image.php</code>
+                            <code>http://encoder.click/scripts/image/decode</code>
                         </dd>
                     </dl>
                     <dl>
@@ -167,7 +167,7 @@
                     <dl>
                         <dt>Usage example</dt>
                         <dd>
-                            Request with cURL: <code>curl --data-urlencode "inputText=data:image/png;base64,iVB...U5g==" http://encoder.click/scripts/decode_image.php</code>
+                            Request with cURL: <code>curl --data-urlencode "inputText=data:image/png;base64,iVB...U5g==" http://encoder.click/scripts/image/decode</code>
                             <br>Response: <code>{literal}{"decodedImage":"http://encoder.click/public/2389351535_2985.png"}{/literal}</code>
                         </dd>
                     </dl>

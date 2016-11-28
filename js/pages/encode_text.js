@@ -5,7 +5,7 @@ $(function() {
         if ($('#inputText').val()) {
             $.ajax({
                 type: 'POST',
-                url: '/scripts/encode_text.php',
+                url: '/scripts/text/encode',
                 data: {
                     inputText: $('#inputText').val()
                 },

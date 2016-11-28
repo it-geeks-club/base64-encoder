@@ -14,7 +14,7 @@
 <div class="page-content inset">
     <div class="row">
         <div class="col-md-12">
-            <form role="form" enctype="multipart/form-data" id="imageUpload" method="post" action="/scripts/encode_image.php">
+            <form role="form" enctype="multipart/form-data" id="imageUpload" method="post" action="/scripts/image/encode">
                 <div class="row">
                     <div class="col-md-5">
                         <div class="well form-group">
