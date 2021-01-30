@@ -1,35 +1,16 @@
-$(function() {
+$(() => {
     'use strict';
 
-    $('button[data-role="sender"]').on('click', function() {
-        if ($('#inputText').val()) {
-            $.ajax({
-                type: 'POST',
-                url: '/scripts/text/encode',
-                data: {
-                    inputText: $('#inputText').val()
-                },
-                dataType: 'json',
-                beforeSend: function() {
-                    $('#encodedText').val('');
-                },
-                success: function(data) {
-                    if (Object.getOwnPropertyNames(data).length === 0) {
-                        showError("Can't encode text");
-                    }
-                    $('#encodedText')
-                        .val(data.encodedText)
-                        .parent('.form-group')
-                        .removeClass('hidden');
-                },
-                error: function() {
-                    showError("Can't encode text");
-                }
-            });
-        }
+    $('button[data-role="sender"]').on('click', () => {
+        const textToEncode = $('#inputText').val();
+        const encodedText = btoa(textToEncode);
+        $('#encodedText')
+            .val(encodedText)
+            .parent('.form-group')
+            .removeClass('hidden');
     });
 
-    $('button[type="reset"]').on('click', function() {
+    $('button[type="reset"]').on('click', () => {
         $('#encodedText')
             .val('')
             .parent('.form-group')
