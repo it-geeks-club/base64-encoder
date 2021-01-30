@@ -3,4 +3,4 @@ temp/
 templates_c/
 *~
 *.temp
-
+.vscode

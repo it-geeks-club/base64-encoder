@@ -53,7 +53,7 @@
             <ul class="sidebar-nav">
                 <li class="sidebar-brand">
                     <a href="#">
-                        <img src="/img/favicon.png"> ENCODER.CLICK
+                        <img src="/img/favicon.png"> base64.technology
                     </a>
                 </li>
                 <li><a href="/index.php?page=about_base64">About BASE64</a></li>
