@@ -56,14 +56,14 @@
                         <img src="/img/favicon.png"> base64.technology
                     </a>
                 </li>
-                <li><a href="/index.php?page=about_base64">About BASE64</a></li>
-                <li><a href="/index.php?page=encode_text">Encode text</a></li>
-                <li><a href="/index.php?page=decode_text">Decode text</a></li>
-                <li><a href="/index.php?page=encode_image">Encode image</a></li>
-                <li><a href="/index.php?page=decode_image">Decode image</a></li>
-                <li><a href="/index.php?page=usages_by_programmers">Usages by programmers</a></li>
-                <li><a href="/index.php?page=api">API</a></li>
-                <li><a href="/index.php?page=site_info">Site info</a></li>
+                <li><a href="/?page=about_base64">About BASE64</a></li>
+                <li><a href="/?page=encode_text">Encode text</a></li>
+                <li><a href="/?page=decode_text">Decode text</a></li>
+                <li><a href="/?page=encode_image">Encode image</a></li>
+                <li><a href="/?page=decode_image">Decode image</a></li>
+                <li><a href="/?page=usages_by_programmers">Usages by programmers</a></li>
+                <li><a href="/?page=api">API</a></li>
+                <li><a href="/?page=site_info">Site info</a></li>
             </ul>
         </div>
 
