@@ -66,7 +66,24 @@
                 <li><a href="/?page=site_info">Site info</a></li>
             </ul>
         </div>
-
+        <div class="mobile-menu">
+            <nav class="navbar navbar-default navbar-custom">
+                <div class="container-fluid">
+                    <div class="navbar-header">
+                      <button type="button" id="menu-toggle" class="navbar-toggle collapsed" aria-expanded="false">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                      </button>
+                      <a class="navbar-brand" href="#">
+                        <img alt="Brand" src="/img/favicon.png" width="30" height="30">
+                        base64.technology
+                      </a>
+                    </div>
+                </div>
+            </nav>
+        </div>
         <!-- Page content -->
         <div id="page-content-wrapper">
             <div class="page-content inset">
